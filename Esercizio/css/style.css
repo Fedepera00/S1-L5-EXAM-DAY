@@ -1,0 +1,118 @@
+/* Your styles here */
+@font-face {
+  font-family: open-sans;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+}
+@font-face {
+  font-family: monserat;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+  font-family: bold;
+}
+
+body {
+  font-family: open-sans;
+  color: #393d41;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.65;
+}
+
+header {
+  background-color: black;
+}
+
+header img {
+  max-width: 200px;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background: url("../images/banner.jpg") no-repeat center center;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f04c2f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: monserat;
+}
+
+.features,
+.details {
+  padding: 20px;
+}
+
+.features .feature,
+.details .detail {
+  margin-bottom: 20px;
+}
+
+.notebook-image {
+  border-radius: 50%;
+}
+
+.notebook-container {
+}
+
+.testimonial {
+  text-align: center;
+  background: #e74c3c;
+  color: white;
+  padding: 20px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  background: #25a2c3;
+  color: white;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .features,
+  .details {
+    justify-content: space-around;
+  }
+
+  .features .feature,
+  .details .detail {
+    flex: 1;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .hero {
+    padding: 40px;
+  }
+
+  .features,
+  .details {
+    padding: 40px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+}
+h1,
+h2 {
+  color: #25a2c3;
+  line-height: 1.5;
+  font-family: monserat;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
